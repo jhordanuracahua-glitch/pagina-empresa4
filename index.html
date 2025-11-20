@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Inversiones Consultores Carpio Hnos SRL – Construcción Civil en Arequipa</title>
+
+  <meta name="description" content="Inversiones Consultores Carpio Hnos SRL ofrece servicios de construcción civil en general, construcción de viviendas, obras civiles, remodelaciones y supervisión técnica en Arequipa, Perú. Calidad, experiencia y cumplimiento garantizado.">
+
+  <meta name="keywords" content="construcción civil Arequipa, empresa constructora Arequipa, construcción de viviendas, obras civiles, constructora en Arequipa, remodelaciones en Arequipa, Carpio Hnos SRL">
+
+  <meta property="og:title" content="Inversiones Consultores Carpio Hnos SRL – Construcción Civil en Arequipa">
+  <meta property="og:description" content="Expertos en construcción civil en general y obras de calidad en Arequipa, Perú.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inversionesconsultorescarpiohnossrl.com/">
+  <meta property="og:image" content="https://inversionesconsultorescarpiohnossrl.com/logo.jpg">
+
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+      --navy:#0f213a;
+      --gold:#d78b1e;
+      --muted:#6b7280;
+      --white:#ffffff;
+      --whatsapp:#25D366;
+      --maxw:1200px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',sans-serif;background:#f4f6f8;color:#111;line-height:1.6}
+    a{color:inherit}
+
+    /* NAVBAR */
+    nav{position:sticky;top:0;background:rgba(255,255,255,0.96);backdrop-filter:saturate(140%) blur(4px);box-shadow:0 4px 18px rgba(2,6,23,0.08);z-index:50}
+    .nav-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{height:56px;border-radius:8px;object-fit:contain}
+    .menu{display:flex;gap:18px;align-items:center}
+    .menu a{font-weight:600;color:#1f2937;text-decoration:none;padding:8px 10px;border-radius:8px}
+    .menu a.cta{background:var(--gold);color:#071224}
+
+    /* HERO */
+    header.hero{height:68vh;min-height:420px;background-image:url('header-bg.jpg');background-size:cover;background-position:center;padding:0;display:flex;align-items:center}
+    header .overlay{width:100%;height:100%;background:linear-gradient(180deg,rgba(15,18,25,0.35),rgba(15,18,25,0.55));display:flex;align-items:center}
+    .hero-inner{max-width:var(--maxw);margin:0 auto;padding:28px;display:flex;gap:30px;align-items:center;justify-content:space-between;color:var(--white)}
+    .hero-left{max-width:640px}
+    .hero-left h1{font-size:38px;line-height:1.02;margin-bottom:12px}
+    .hero-left p{color:rgba(255,255,255,0.9);margin-bottom:18px;font-size:18px}
+    .hero-ctas{display:flex;gap:12px;align-items:center}
+    .btn{display:inline-block;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none}
+    .btn-primary{background:var(--gold);color:#071224}
+    .btn-ghost{background:transparent;border:2px solid rgba(255,255,255,0.18);color:white}
+
+    /* Floating WhatsApp */
+    .whatsapp-float{position:fixed;right:20px;bottom:20px;background:var(--whatsapp);color:#fff;padding:14px 16px;border-radius:60px;box-shadow:0 8px 30px rgba(37,211,102,0.18);display:flex;gap:10px;align-items:center;text-decoration:none;font-weight:700;z-index:60}
+    .whatsapp-float span{font-size:20px}
+
+    /* MAIN */
+    .container{max-width:var(--maxw);margin:40px auto;padding:0 20px}
+    .section{padding:36px 0}
+    .section .title{font-size:28px;color:var(--navy);margin-bottom:18px;font-weight:700}
+
+    /* SERVICES GRID */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+    .card{background:#fff;padding:22px;border-radius:12px;box-shadow:0 8px 22px rgba(2,6,23,0.06);transition:transform .28s}
+    .card:hover{transform:translateY(-6px)}
+    .card h3{margin-bottom:8px;color:var(--navy);font-size:18px}
+    .card p{color:var(--muted);font-size:14px}
+
+    /* PROJECTS */
+    .projects{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:start}
+    .projects .main{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .project{border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(2,6,23,0.06);background:#fff}
+    .project img{width:100%;height:220px;object-fit:cover;display:block}
+    .aside-project{background:#fff;padding:20px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.04)}
+
+    /* WHY CHOOSE */
+    .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+    .why .item{background:#fff;padding:20px;border-radius:12px;box-shadow:0 8px 22px rgba(2,6,23,0.04);text-align:left}
+    .why .item h4{margin-bottom:8px;color:var(--navy)}
+
+    /* CONTACT */
+    .contact-box{background:#071224;padding:28px;border-radius:14px;color:rgba(255,255,255,0.95);box-shadow:0 12px 40px rgba(2,6,23,0.2);display:flex;flex-direction:column;gap:10px}
+    .contact-box a{display:inline-block;margin-top:8px;padding:12px 18px;border-radius:10px;background:var(--gold);color:#071224;text-decoration:none;font-weight:700}
+
+    /* FOOTER */
+    footer{padding:28px;background:#0b0b0b;color:#cdd5db;text-align:center;margin-top:40px}
+
+    @media(max-width:900px){
+      .hero-inner{flex-direction:column;align-items:flex-start}
+      .projects{grid-template-columns:1fr}
+      .projects .main{grid-template-columns:1fr}
+    }
+
+    header.hero{animation: bgMove 18s linear infinite}
+    @keyframes bgMove{
+      0%{background-position:center 0%}
+      50%{background-position:center 8%}
+      100%{background-position:center 0%}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="logo.jpg" alt="Logo Inversiones Carpio"/>
+        <div style="font-weight:700;color:#0f213a">Inversiones & Consultores Carpio Hnos SRL</div>
+      </div>
+      <div class="menu" role="menu">
+        <a href="#services">Servicios</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#nuestro-trabajo">Nuestro Trabajo</a>
+        <a href="#contact">Contacto</a>
+        <a class="cta" href="#contact" style="padding:8px 14px;border-radius:8px;background:var(--gold);">Solicitar Presupuesto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="overlay">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1>Inversiones & Consultores Carpio Hnos SRL — Arequipa & Perú</h1>
+          <p>Proyectos integrales: viviendas, obras civiles, remodelaciones y supervisión técnica. Calidad garantizada y cumplimiento de plazos.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://wa.me/51958900698?text=Hola%20Carpio%20Hnos,%20quiero%20solicitar%20un%20presupuesto">📲 Contactar por WhatsApp</a>
+            <a class="btn btn-ghost" href="mailto:inversionesconsultorescarpio@gmail.com">✉️ Enviar Correo</a>
+          </div>
+        </div>
+        <div class="hero-right" style="max-width:420px;text-align:right;color:rgba(255,255,255,0.95)">
+          <div style="background:rgba(255,255,255,0.06);padding:18px;border-radius:12px;backdrop-filter:blur(6px)">
+            <div style="font-size:14px;color:rgba(255,255,255,0.9);">Teléfono / WhatsApp</div>
+            <div style="font-weight:800;font-size:20px;margin-top:8px">+51 958 900 698</div>
+            <div style="margin-top:8px;color:rgba(255,255,255,0.85)">Atendemos proyectos en todo el Perú</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+
+    <!-- SERVICIOS -->
+    <section id="services" class="section">
+      <div class="title">Servicios</div>
+      <div class="grid" style="margin-top:18px">
+        <div class="card"><h3>Construcción de Viviendas</h3><p>Proyectos llave en mano: cimentación, estructura, instalaciones y acabados.</p></div>
+        <div class="card"><h3>Obras Civiles</h3><p>Edificaciones comerciales, naves industriales y obras públicas.</p></div>
+        <div class="card"><h3>Remodelaciones</h3><p>Renovación, ampliación y optimización de espacios residenciales y comerciales.</p></div>
+        <div class="card"><h3>Estructuras de Concreto y Acero</h3><p>Diseño y ejecución con norma técnica y control de calidad.</p></div>
+        <div class="card"><h3>Acabados de Alta Calidad</h3><p>Pisos, fachadas, pintura, revestimientos y detalles de terminación.</p></div>
+        <div class="card"><h3>Consultoría y Gestión</h3><p>Planos, presupuestos, gestión de licencias y supervisión técnica.</p></div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="section">
+      <div class="title">Proyectos Destacados</div>
+      <div class="projects" style="margin-top:18px">
+        <div class="main">
+          <div class="project"><img src="obra1.jpg" alt="Proyecto 1"><div style="padding:14px"><strong>Vivienda Moderna</strong><p style="color:var(--muted);margin-top:6px">Direccion — 2025</p></div></div>
+          <div class="project"><img src="obra2.jpg" alt="Proyecto 2"><div style="padding:14px"><strong>Vivienda</strong><p style="color:var(--muted);margin-top:6px">Direccion — 2025</p></div></div>
+        </div>
+        <aside class="aside-project">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="font-weight:700;font-size:18px">Proyecto Rápido</div>
+            <div style="color:var(--muted)">Estructura de concreto y acabados en 12 semanas.</div>
+            <div style="margin-top:8px"><strong>Ubicación:</strong> Arequipa, Perú</div>
+            <div style="margin-top:10px"><strong>Contacto:</strong> +51 958 900 698</div>
+            <a href="https://wa.me/51958900698" style="display:inline-block;margin-top:12px;padding:10px 14px;border-radius:8px;background:var(--whatsapp);color:#fff;text-decoration:none;font-weight:700">📲 Consultar proyecto</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ⭐ NUEVA SECCIÓN: NUESTRO TRABAJO -->
+    <section id="nuestro-trabajo" class="section">
+      <div class="title">Nuestro Trabajo</div>
+      <div class="grid" style="margin-top:18px">
+
+        <!-- EJEMPLOS: cambia foto1.jpg por tus nombres -->
+        <div class="project">
+          <img src="imagenes-de-trabajo/foto1.jpg" alt="Trabajo realizado">
+        </div>
+
+        <div class="project">
+          <img src="imagenes-de-trabajo/foto2.jpg" alt="Trabajo realizado">
+        </div>
+
+        <div class="project">
+          <img src="imagenes-de-trabajo/foto3.jpg" alt="Trabajo realizado">
+        </div>
+
+        <div class="project">
+          <img src="imagenes-de-trabajo/foto4.jpg" alt="Trabajo realizado">
+        </div>
+          <div class="project">
+          <img src="imagenes-de-trabajo/foto5.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto6.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto7.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto8.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto9.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto10.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto11.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto12.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto13.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto14.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto15.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto16.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto17.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto18.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto19.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto20.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto21.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto22.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto23.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto24.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto25.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto26.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto27.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto28.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto29.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto30.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto31.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto32.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto33.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto34.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto35.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto36.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto37.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto38.jpg" alt="Trabajo realizado">
+        </div><div class="project">
+          <img src="imagenes-de-trabajo/foto39.jpg" alt="Trabajo realizado">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="section">
+      <div class="title">Por qué elegirnos</div>
+      <div class="why">
+        <div class="item"><h4>Experiencia comprobada</h4><p style="color:var(--muted)">Equipo técnico con años de experiencia en obras públicas y privadas.</p></div>
+        <div class="item"><h4>Calidad y seguridad</h4><p style="color:var(--muted)">Materiales certificados y controles de calidad en obra.</p></div>
+        <div class="item"><h4>Cumplimiento de plazos</h4><p style="color:var(--muted)">Planificación y supervisión para cumplir fechas de entrega.</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section">
+      <div class="title">Contacto</div>
+      <div style="display:grid;grid-template-columns:1fr 380px;gap:20px;margin-top:18px">
+        <div>
+          <p style="font-size:18px;color:var(--muted)">Para cotizaciones y consultas, escríbenos o llámanos.</p>
+          <p style="font-size:18px"><strong>Teléfono / WhatsApp:</strong> +51 958 900 698</p>
+          <p style="font-size:18px"><strong>Email:</strong> inversionesconsultorescarpio@gmail.com</p>
+          <p style="margin-top:12px;color:var(--muted)">Horario: Lun - Vie 08:00 - 18:00</p>
+        </div>
+        <div>
+          <div class="contact-box">
+            <div style="font-weight:700;font-size:18px">Solicita tu presupuesto</div>
+            <div style="color:rgba(255,255,255,0.85)">Rellena el formulario y te contactamos a la brevedad.</div>
+            <form id="contactForm" style="display:flex;flex-direction:column;gap:8px;margin-top:10px" onsubmit="submitForm(event)">
+              <input name="name" placeholder="Nombre" required style="padding:10px;border-radius:8px;border:none;font-size:14px"/>
+              <input name="phone" placeholder="Teléfono" required style="padding:10px;border-radius:8px;border:none;font-size:14px"/>
+              <input name="email" placeholder="Correo (opcional)" style="padding:10px;border-radius:8px;border:none;font-size:14px"/>
+              <textarea name="message" placeholder="Mensaje o detalle del proyecto" rows="4" style="padding:10px;border-radius:8px;border:none;font-size:14px"></textarea>
+              <button type="submit" style="padding:12px;border-radius:10px;border:none;background:var(--gold);font-weight:800;cursor:pointer">Enviar</button>
+              <div id="status" style="font-size:14px;color:rgba(255,255,255,0.95)"></div>
+            </form>
+            <small style="opacity:0.8">Los mensajes se enviarán a: inversionesconsultorescarpio@gmail.com</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/51958900698" target="_blank" aria-label="WhatsApp">
+    <span>💬</span> +51 958 900 698
+  </a>
+
+  <footer>
+    © 2025 Inversiones & Consultores Carpio Hnos SRL — RUC: (20614841410)
+  </footer>
+
+<script>
+function submitForm(e){
+  e.preventDefault();
+  var f = document.getElementById('contactForm');
+  var name = f.name.value.trim();
+  var phone = f.phone.value.trim();
+  var email = f.email.value.trim();
+  var message = f.message.value.trim();
+  var body = 'Nombre: ' + name + '%0D%0A' +
+             'Teléfono: ' + phone + '%0D%0A' +
+             'Correo: ' + email + '%0D%0A' +
+             'Mensaje: ' + message;
+
+  var mailto = 'mailto:inversionesconsultorescarpio@gmail.com?subject=Solicitud%20de%20presupuesto%20desde%20web&body=' + body;
+  window.location.href = mailto;
+
+  document.getElementById('status').innerText = 'Abriendo tu cliente de correo...';
+}
+</script>
+
+</body>
+</html>
